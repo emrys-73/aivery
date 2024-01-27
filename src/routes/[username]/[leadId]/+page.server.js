@@ -15,9 +15,19 @@ export const load = ({ locals, params }) => {
         }
     }
 
+    const getuser = async () => {
+        try {
+            const user = serializeNonPOJOs(await locals.pb.collection('aivery_users').getFirstListItem(`username="${params.username}"`))
+            return user
+        } catch (err) {
+            console.log("Whoops")
+        }
+    }
+
     return {
         lead: getLead(),
         username: params.username,
+        user: getuser()
     }
 
 }
