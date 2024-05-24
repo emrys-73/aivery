@@ -40,7 +40,9 @@ export const actions = {
 
         const linkedinProfileUrl = data.url;
         const apiUrl = 'https://nubela.co/proxycurl/api/v2/linkedin';
-        const bearerToken = 'NVCegaxDiwqBqDahn3-4Ig';
+        // const bearerToken = 'NVCegaxDiwqBqDahn3-4Ig';
+        const bearerToken = '1x6qNEYP5m204NCd0IDtPw';
+        //Added new key
         //const bearerToken = "yourMom";
         
 
